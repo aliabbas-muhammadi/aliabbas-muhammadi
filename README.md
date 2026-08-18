@@ -10,7 +10,15 @@
 
 ### Open-source contributions
 
-Actively contributing to open source — a merged README fix to **[recharts](https://github.com/recharts/recharts/pull/7648)**, plus open PRs to **[deepeval](https://github.com/confident-ai/deepeval/pull/3073)**, **[litellm](https://github.com/BerriAI/litellm/pull/37185)**, and **[ethereum-org-website](https://github.com/ethereum/ethereum-org-website/pull/19090)**.
+<!-- CONTRIBUTIONS:START -->
+Merged pull requests across **1 repository** — **2 contributions** and counting.
+
+| Repository | Stars | PRs | Latest |
+| --- | --- | --- | --- |
+| [**recharts**](https://github.com/recharts/recharts) | ⭐ 27.5k | 2 | [#7653](https://github.com/recharts/recharts/pull/7653) — docs: fix dead UMD install links in README |
+<!-- CONTRIBUTIONS:END -->
+
+More fixes in review across **litellm**, **drizzle-orm**, **deepeval**, and **ethereum-org-website**.
 
 ---
 
