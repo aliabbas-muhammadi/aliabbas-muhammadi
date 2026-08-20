@@ -5,7 +5,10 @@
 ### Projects
 
 - **[Citation-Grounded RAG](https://github.com/aliabbas-muhammadi/citation-rag)** — a RAG question-answering engine where every claim is tied to a specific source passage, with an *abstain path* when the corpus doesn't support an answer. Runs keyless end-to-end. → **[Live demo](https://ask.alimuhammadi.com)**
+- **[Judgelab](https://github.com/aliabbas-muhammadi/judgelab)** — an open-source (MIT) Python lab that *measures* LLM-as-a-judge reliability: chance-corrected agreement (Cohen's κ, Krippendorff's α) with bootstrap confidence intervals, reproduced keyless from a committed MT-Bench snapshot. → **[Case study](https://alimuhammadi.com/work/judgelab)**
 - **[Veritas](https://github.com/aliabbas-muhammadi/veritas)** — an LLM gateway whose semantic-cache *false-positive rate is measured and CI-gated* (the industry reports only hit rate). → **[Live demo](https://gateway.alimuhammadi.com)**
+
+Also: production web and an offline-first React Native mobile app (Swift / Kotlin native modules) — full case studies on the [portfolio](https://alimuhammadi.com).
 
 ### Open-source contributions
 
