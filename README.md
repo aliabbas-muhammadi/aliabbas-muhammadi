@@ -8,7 +8,7 @@
 - **[Judgelab](https://github.com/aliabbas-muhammadi/judgelab)** — an open-source (MIT) Python lab that *measures* LLM-as-a-judge reliability: chance-corrected agreement (Cohen's κ, Krippendorff's α) with bootstrap confidence intervals, reproduced keyless from a committed MT-Bench snapshot. → **[Case study](https://alimuhammadi.com/work/judgelab)**
 - **[Veritas](https://github.com/aliabbas-muhammadi/veritas)** — an LLM gateway whose semantic-cache *false-positive rate is measured and CI-gated* (the industry reports only hit rate). → **[Live demo](https://gateway.alimuhammadi.com)**
 
-Also: production web and an offline-first React Native mobile app (Swift / Kotlin native modules) — full case studies on the [portfolio](https://alimuhammadi.com).
+Also: built and shipped a production web platform and offline-first React Native (Expo) app to the App Store and Google Play, including custom native modules in Swift, Kotlin and Objective-C++ — full case studies on the [portfolio](https://alimuhammadi.com).
 
 ### Open-source contributions
 
@@ -28,4 +28,3 @@ Merged pull requests across **1 repository** — **2 contributions** and countin
 
 **Stack:** Next.js · Node · Postgres / Supabase (RLS, pgvector) · Python · RAG & LLM evals
 **Reach me:** [alimuhammadi.com](https://alimuhammadi.com) · [LinkedIn](https://www.linkedin.com/in/aliabbas-muhammadi)
-
