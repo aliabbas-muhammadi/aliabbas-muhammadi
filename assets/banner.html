@@ -1,0 +1,151 @@
+<!doctype html>
+<!--
+  Source for the README banner. Same identity as alimuhammadi.com: warm paper,
+  Fraunces over Inter and JetBrains Mono, a faint blueprint grid, one teal
+  accent. Open with ?theme=dark for the dark variant; scripts/render-banner.mjs
+  renders both to PNG.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Ali Abbas banner</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=block" rel="stylesheet">
+<style>
+  :root {
+    --paper: #faf8f2;
+    --ink: #1b1a17;
+    --ink-muted: #58544c;
+    --ink-faint: #6f6a5e;
+    --line: #e7e1d4;
+    --line-strong: #d8d1c0;
+    --accent: #11695f;
+    --watermark: #eef4f1;
+  }
+  :root[data-theme="dark"] {
+    --paper: #14130f;
+    --ink: #ece7da;
+    --ink-muted: #b1ab9d;
+    --ink-faint: #8a8477;
+    --line: #2b281f;
+    --line-strong: #3a362b;
+    --accent: #4bae9e;
+    --watermark: #1a1e1a;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: transparent; }
+  body { width: 1280px; height: 400px; }
+
+  .card {
+    position: relative;
+    width: 1280px;
+    height: 400px;
+    overflow: hidden;
+    border: 1px solid var(--line-strong);
+    border-radius: 22px;
+    background: var(--paper);
+    display: grid;
+    grid-template-columns: 1fr 380px;
+    align-items: center;
+    padding: 0 72px;
+    column-gap: 56px;
+  }
+  .grid {
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(to right, var(--line) 1px, transparent 1px),
+      linear-gradient(to bottom, var(--line) 1px, transparent 1px);
+    background-size: 64px 64px;
+    mask-image: radial-gradient(ellipse 85% 95% at 30% 0%, #000 30%, transparent 80%);
+  }
+  .watermark {
+    position: absolute;
+    right: 28px;
+    bottom: -150px;
+    font: 600 460px/1 "Fraunces", serif;
+    color: var(--watermark);
+    letter-spacing: -0.02em;
+  }
+  .left, .metrics { position: relative; }
+
+  .eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font: 500 14px/1 "JetBrains Mono", monospace;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+  .eyebrow .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); }
+  h1 {
+    margin-top: 26px;
+    font: 500 54px/1.08 "Fraunces", serif;
+    letter-spacing: -0.015em;
+    color: var(--ink);
+  }
+  h1 .accent { color: var(--accent); }
+  .sub {
+    margin-top: 22px;
+    font: 400 20px/1.45 "Inter", sans-serif;
+    color: var(--ink-muted);
+  }
+
+  .metrics {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px 28px;
+    padding-left: 44px;
+    border-left: 1px solid var(--line-strong);
+  }
+  .metrics dt { font: 600 34px/1 "Fraunces", serif; color: var(--ink); }
+  .metrics dd {
+    margin-top: 9px;
+    font: 400 11.5px/1.4 "JetBrains Mono", monospace;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+  }
+  .platforms { grid-column: 1 / -1; }
+  .platforms dt { font-size: 26px; }
+
+  .rule {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 6px;
+    background: var(--accent);
+  }
+</style>
+<script>
+  if (new URLSearchParams(location.search).get("theme") === "dark") {
+    document.documentElement.dataset.theme = "dark";
+  }
+</script>
+</head>
+<body>
+  <div class="card">
+    <div class="grid"></div>
+    <div class="watermark">A</div>
+
+    <div class="left">
+      <p class="eyebrow"><span class="dot"></span>Full-stack, mobile &amp; AI engineer · Melbourne</p>
+      <h1>I turn messy information into products people rely on<span class="accent">.</span></h1>
+      <p class="sub">Search, retrieval and evaluation, shipped on the web, iOS and Android.</p>
+    </div>
+
+    <dl class="metrics">
+      <div><dt>~315k</dt><dd>hadith records ingested</dd></div>
+      <div><dt>4,900+</dt><dd>automated tests, web + mobile</dd></div>
+      <div><dt>91%</dt><dd>claims grounded (30-q eval)</dd></div>
+      <div><dt>1.00</dt><dd>cache precision at 0% false positives</dd></div>
+      <div class="platforms"><dt>Web · iOS · Android</dt><dd>one product, live on every surface</dd></div>
+    </dl>
+
+    <div class="rule"></div>
+  </div>
+</body>
+</html>
