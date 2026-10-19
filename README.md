@@ -1,6 +1,6 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.png">
-  <img alt="Ali Abbas, full-stack, mobile and AI engineer in Melbourne. I turn messy information into products people rely on." src="assets/banner-light.png" width="100%">
+  <img alt="Ali Abbas, full-stack, mobile and AI engineer in Melbourne. I turn messy information into products people rely on. Shia Library: ~315k hadith records ingested, 41 books published live, 4,900+ automated tests, 91% of claims grounded on a 30-question eval, live on web, iOS and Android." src="assets/banner-light.png" width="100%">
 </picture>
 
 <p align="center">
@@ -9,11 +9,11 @@
   <a href="mailto:ali@alimuhammadi.com"><img alt="Email: ali@alimuhammadi.com" src="https://img.shields.io/badge/Email-ali%40alimuhammadi.com-0b4f47?style=for-the-badge"></a>
 </p>
 
-### Hi, I'm Ali
+## Hi, I'm Ali
 
-Full-stack, mobile and AI engineer in Melbourne, in the final year of a Bachelor of IT & Commerce at Monash University. I build search and AI systems end to end and measure them: answers that cite their source or abstain, semantic caches checked for wrong hits rather than just hit rate, and offline-first apps that never show a half-downloaded book.
+Full-stack, mobile and AI engineer in Melbourne, finishing an IT & Commerce double degree at Monash University (2026). I build search and AI systems end to end and measure them: answers that cite their source or abstain, semantic caches checked for wrong hits rather than just hit rate, and offline-first apps that never show a half-downloaded book.
 
-Right now I run [Shia Library](https://shialibrary.com), a search platform over ~315,000 ingested hadith records, live on the web, the App Store and Google Play from one backend I designed, built and operate alone.
+Right now I run [Shia Library](https://shialibrary.com), a search platform over ~315,000 ingested hadith records (41 books published so far), live on the web, the App Store and Google Play from one backend I designed, built and operate alone.
 
 ## Featured work
 
@@ -24,7 +24,7 @@ Right now I run [Shia Library](https://shialibrary.com), a search platform over 
 <h3><a href="https://alimuhammadi.com/work/shia-library">Shia Library</a></h3>
 
 <sub>Solo · live on web, iOS and Android</sub><br>
-Diacritic-insensitive Arabic, English full-text and semantic search, fused with RRF, plus a cited Ask in beta that grounds 91% of its claims. One Supabase backend serves the web and offline-first React Native apps with native Swift and Kotlin modules.
+Diacritic-insensitive Arabic, English full-text and semantic search, fused with RRF, plus a cited Ask in beta that grounds 91% of claims on a 30-question eval. One Supabase backend serves the web and offline-first React Native apps with native Swift and Kotlin modules.
 
 <a href="https://alimuhammadi.com/work/shia-library">Case study</a> · <a href="https://alimuhammadi.com/work/shia-library-mobile">Mobile case study</a> · <a href="https://shialibrary.com">Live site</a>
 
@@ -50,7 +50,7 @@ Hybrid BM25 and embedding retrieval, answered by Claude with native citations, s
 <h3><a href="https://alimuhammadi.com/work/llm-gateway">LLM Gateway (Veritas)</a></h3>
 
 <sub>Solo · public playground</sub><br>
-A semantic cache measured on the number the industry skips: the precision of its hits. A two-tier guard lifts cache-hit precision from 0.48 to 1.00 at 0% false positives on a 75-pair adversarial set, and CI fails the build if the false-positive rate rises.
+A semantic cache measured on the number most caches don't report: the precision of its hits. A two-tier guard lifts cache-hit precision from 0.48 to 1.00 at 0% false positives on a 75-pair adversarial set, and CI fails the build if the false-positive rate rises above its budget.
 
 <a href="https://gateway.alimuhammadi.com">Live demo</a> · <a href="https://github.com/aliabbas-muhammadi/veritas">Code</a> · <a href="https://alimuhammadi.com/work/llm-gateway">Case study</a>
 
@@ -62,7 +62,7 @@ A semantic cache measured on the number the industry skips: the precision of its
 <h3><a href="https://alimuhammadi.com/work/judgelab">Judgelab</a></h3>
 
 <sub>Solo · open source (MIT)</sub><br>
-How reliable is LLM-as-a-judge? Reproduces GPT-4-vs-human agreement on MT-Bench over 1,814 comparisons and adds what the original left out: Cohen's κ with bootstrap CIs (0.767) and the human–human ceiling (α 0.485). Keyless, and re-derived byte-for-byte in CI.
+How reliable is LLM-as-a-judge? Reproduces GPT-4-vs-human agreement on MT-Bench over 1,814 comparisons and adds what the original left out: chance-corrected Cohen's κ with bootstrap CIs (0.767 on decisive cases, 0.505 with ties), read against the human–human ceiling (α 0.485). Keyless, and re-derived byte-for-byte in CI.
 
 <a href="https://github.com/aliabbas-muhammadi/judgelab">Code</a> · <a href="https://alimuhammadi.com/work/judgelab">Case study</a>
 
@@ -76,7 +76,7 @@ How reliable is LLM-as-a-judge? Reproduces GPT-4-vs-human agreement on MT-Bench 
 <h3><a href="https://alimuhammadi.com/work/polarity">Polarity</a></h3>
 
 <sub>Solo · ML research, source release</sub><br>
-A 184M-parameter DeBERTa-v3 cross-encoder that decides whether two queries can share a cached answer. It recalled 31/31 equivalent pairs with 2/44 false accepts on its target set; weak MRPC transfer (ROC-AUC 0.640) is reported, not hidden.
+A 184M-parameter DeBERTa-v3 cross-encoder that decides whether two queries can share a cached answer. It recalled 31/31 equivalent pairs with 2/44 false accepts on an author-created 75-pair target set; weak MRPC transfer (ROC-AUC 0.640) is reported, not hidden.
 
 <a href="https://github.com/aliabbas-muhammadi/polarity">Code</a> · <a href="https://alimuhammadi.com/work/polarity">Case study</a>
 
@@ -88,7 +88,7 @@ A 184M-parameter DeBERTa-v3 cross-encoder that decides whether two queries can s
 <h3><a href="https://alimuhammadi.com/work/engram">Engram</a></h3>
 
 <sub>Solo · in progress</sub><br>
-Bitemporal memory for agents: every fact records when it became true and when it was learned, and conflicts resolve by named, logged rules instead of last-write-wins. 0/6 stale answers against 3/6 for an append-only memory on its benchmark.
+Bitemporal memory for agents: every fact records when it became true and when it was learned, and conflicts resolve by named, logged rules instead of last-write-wins. 0/6 stale answers against 3/6 for an append-only memory on a small, hand-written benchmark.
 
 <a href="https://github.com/aliabbas-muhammadi/engram">Code</a> · <a href="https://alimuhammadi.com/work/engram">Case study</a>
 
@@ -100,11 +100,11 @@ Bitemporal memory for agents: every fact records when it became true and when it
 
 ## Try it live
 
-| Project | What you can do | |
+| Project | What you can do | Open |
 | --- | --- | --- |
 | [Shia Library](https://alimuhammadi.com/work/shia-library) | Search 41 books of hadith in Arabic or English, with or without diacritics. The iOS and Android apps keep downloaded books readable offline. | [Open](https://shialibrary.com)<br>[App&nbsp;Store](https://alimuhammadi.com/go/shia-library/ios)<br>[Google&nbsp;Play](https://alimuhammadi.com/go/shia-library/android) |
 | [Citation-Grounded RAG](https://alimuhammadi.com/work/citation-rag) | Ask about the U.S. Constitution, the Bill of Rights or the Federalist Papers. Every sentence links to the passage it came from, and a question the documents can't answer gets no answer rather than a guess. | [Ask&nbsp;it](https://ask.alimuhammadi.com) |
-| [LLM Gateway](https://alimuhammadi.com/work/llm-gateway) | A guided tour of the real gateway: a paraphrase served from cache at $0, a negation blocked by the guard, and a provider outage rescued by failover, with live metrics. | [Try&nbsp;it](https://gateway.alimuhammadi.com) |
+| [LLM Gateway (Veritas)](https://alimuhammadi.com/work/llm-gateway) | A guided tour of the gateway: a paraphrase served from cache at $0, a negation blocked by the guard, and a forced provider outage rescued by failover, with live metrics. | [Try&nbsp;it](https://gateway.alimuhammadi.com) |
 
 ## Open-source contributions
 
