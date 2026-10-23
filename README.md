@@ -113,7 +113,7 @@ Merged pull requests across **1 repository** — **2 contributions** and countin
 
 | Repository | Stars | PRs | Latest |
 | --- | --- | --- | --- |
-| [**recharts**](https://github.com/recharts/recharts) | ⭐ 27.6k | 2 | [#7653](https://github.com/recharts/recharts/pull/7653) — docs: fix dead UMD install links in README |
+| [**recharts**](https://github.com/recharts/recharts) | ⭐ 27.7k | 2 | [#7653](https://github.com/recharts/recharts/pull/7653) — docs: fix dead UMD install links in README |
 <!-- CONTRIBUTIONS:END -->
 
 <!-- INREVIEW:START -->
